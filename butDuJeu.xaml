@@ -1,0 +1,41 @@
+﻿<UserControl
+    x:Class="SAE.butDuJeu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SAE"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="800"
+    d:DesignWidth="1280"
+    mc:Ignorable="d">
+    <Canvas>
+
+        <Image
+            Width="1280"
+            Height="800"
+            Source="/images/Fond/regleDuJeu.jpg"
+            Stretch="Fill" />
+        <TextBlock
+            Canvas.Left="348"
+            Canvas.Top="180"
+            Width="584"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontFamily="Lucida Calligraphy"
+            FontSize="24"
+            Foreground="White"
+            TextAlignment="Center"
+            TextWrapping="Wrap"><Run Text="Benoit de Diard, puissant capitaine pirate du XIXe siècle, se retrouve dans une intrépide aventure. " /><LineBreak /><Run Text="Alors qu'il était à la recherche du trésor de Kellogg's, son équipage se mutine et le trahit. Seul contre tous, il poursuit sa quête pour la fortune et traverse des contrées aussi dangereuses que mythique." /></TextBlock>
+        <Button
+            x:Name="RetourParametre_butDujeu"
+            Width="316"
+            Height="103"
+            BorderThickness="0,0,0,0"
+            Click="RetourParametreButDuJeu_click"
+            Content="Retour"
+            Cursor="Hand"
+            FontFamily="Lucida Calligraphy"
+            FontSize="40" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" />
+
+    </Canvas>
+</UserControl>

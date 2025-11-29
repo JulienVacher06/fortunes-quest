@@ -1,0 +1,72 @@
+﻿<UserControl
+    x:Class="SAE.Transition"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SAE"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="800"
+    d:DesignWidth="1280"
+    mc:Ignorable="d">
+    <Canvas>
+        <Image
+            Width="1280"
+            Height="800"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Source="/images/Fond/fond_transistion.png"
+            Stretch="Fill" />
+        <Image
+            x:Name="capitaine"
+            Canvas.Left="787"
+            Canvas.Top="662"
+            Width="50"
+            Height="100"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Source="/images/Personnage/1_personnage/immobile/capitaine_immobile1.png"
+            Stretch="Fill" />
+        <TextBlock
+            x:Name="TB_parlote"
+            Canvas.Left="810"
+            Canvas.Top="538"
+            Width="265"
+            Height="89"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontFamily="Lucida Calligraphy"
+            FontSize="16"
+            Text="Salutations, Noble étranger"
+            TextAlignment="Center"
+            TextWrapping="Wrap" />
+        <Button
+            x:Name="B_suivantTransitions"
+            Canvas.Left="1078"
+            Canvas.Top="10"
+            Width="192"
+            Height="83"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="{x:Null}"
+            Click="B_suivantTransitions_Click"
+            Content="Suivant"
+            FontFamily="Lucida Calligraphy"
+            FontSize="36"
+            Foreground="White" />
+        <Button
+            x:Name="B_ProchainNiveau"
+            Canvas.Left="914"
+            Canvas.Top="98"
+            Width="356"
+            Height="79"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="{x:Null}"
+            Click="B_ProchainNiveau_Click"
+            Content="Prochain Niveau"
+            FontFamily="Lucida Calligraphy"
+            FontSize="36"
+            Foreground="White"
+            Opacity="0" />
+    </Canvas>
+</UserControl>
